@@ -1,0 +1,57 @@
+#+title: Agenda
+
+Um programa de terminal para gerenciar contatos telefônicos, feito com
+intuito de praticar a linguagem Rust do ponto de vista de um iniciante
+em programação.
+
+Foi utilizado o máximo possível de programação procedural durante o
+desenvolvimento, evitando muitas abstrações para não influenciar no
+processo de aprendizagem.
+
+* Funcionalidades
+1) Listar todos contatos
+2) Pesquisar contato por nome
+3) Cadastrar contato
+4) Alterar contato
+5) Apagar contato
+6) Carregar arquivo
+7) Descarregar arquivo
+
+** Listar todos contatos
+Lista todos os contatos de forma paginada, cada página mostra 20
+contatos.
+
+** Pesquisar contato por nome
+Permite pesquisar todos os contatos que comecem com o texto fornecido.
+
+** Cadastrar contato
+Permite cadastrar um novo contato. Não aceita contatos repetidos, cujo
+nome e telefone são os mesmos.
+
+** Alterar contato
+Executa a pesquisa por nome, dando a opção de selecionar o contato que
+será alterado.
+
+** Apagar contato
+Executa a pesquisa por nome, dando a opção de selecionar o contato que
+será apagado.
+
+** Carregar arquivo
+Permite carregar um arquivo txt com contatos pre definidos, o formato
+usado é =nome,telefone=, por exemplo:
+
+#+begin_example
+foo,11983746253
+bar,11383746253
+#+end_example
+
+** Descarregar arquivo
+Descarrega a lista de contatos que está em memória em um arquivo txt,
+com o mesmo formato uado na opção Carregar arquivo.
+
+* Como rodar
+Com o [[https://www.rust-lang.org/pt-BR][Rust]] instalado, na pasta do projeto digite:
+
+#+begin_src sh
+  cargo run
+#+end_src
